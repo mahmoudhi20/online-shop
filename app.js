@@ -135,3 +135,7 @@ function changeQuantity($idProduct, $type){
     // reload html view cart
     addCartToHTML();
 }
+document.querySelector('.checkout a').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.href = 'checkout.html'; // ✅ Works inside WebViewer
+});
